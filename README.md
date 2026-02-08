@@ -127,8 +127,6 @@ Here are some ideas to get you started:
   <img width="2" />
   <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=for-the-badge" height="40" alt="html5 logo"  />
   <img width="2" />
-  <img src="https://img.shields.io/badge/Slack-4A154B?logo=slack&logoColor=white&style=for-the-badge" height="40" alt="slack logo"  />
-  <img width="2" />
   <img src="https://img.shields.io/badge/Amazon AWS-232F3E?logo=amazonwebservices&logoColor=FF9900&style=for-the-badge" height="40" alt="amazonwebservices aws logo"  />
   
   <br>
@@ -163,7 +161,7 @@ Here are some ideas to get you started:
     media="(prefers-color-scheme: dark), (prefers-color-scheme: no-preference)"
   />
   <source
-    srcset="https://www.sphinx-doc.org/en/master/_static/sphinx-logo.svg"
+    srcset="https://media.licdn.com/dms/image/v2/C4E12AQELlMidQLAXfw/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1623393323569?e=2147483647&v=beta&t=q4IWwxRbuxhdDedNS4OekJKwjxTigt25PusIkDn91WM"
     media="(prefers-color-scheme: light)"
   />
   <img src="https://www.sphinx-doc.org/en/master/_static/sphinx-logo.svg" height="30"  alt="sphinx logo"  />
@@ -244,7 +242,7 @@ Here are some ideas to get you started:
 <a target="_blank" href="https://github.com/search?q=owner%3ACORE-Robotics-Lab%20author%3ADaraan%20is%3Amerged&type=pullrequests&s=comments&o=desc">
   <picture>
   <source
-    srcset="./profile/prs/profile/prs/dark-CORE-Robotics-Lab-Interpretable_DDTS_AISTATS2020.svg"
+    srcset="./profile/prs/dark-CORE-Robotics-Lab-Interpretable_DDTS_AISTATS2020.svg"
     media="(prefers-color-scheme: dark)"
   />
   <source
