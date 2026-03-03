@@ -1,0 +1,56 @@
+name: GitHub Readme Stats Action
+description: Generate GitHub Readme Stats cards in GitHub Actions.
+author: readme-tools
+inputs:
+  card:
+    description: Card type to generate (stats, prs).
+    required: true
+  options:
+    description: Options for the card (query string or JSON).
+    required: false
+    default: ""
+  path:
+    description: Output path for SVG file (relative path; include filename with .svg). For prs cards, this is a filename prefix.
+    required: false
+    default: ""
+  token:
+    description: GitHub token (PAT or GITHUB_TOKEN).
+    required: false
+    default: ""
+  custom_images:
+    description: >
+      Custom image URLs for specific repositories, overriding the default owner
+      avatar. Provide one mapping per line in "repo_name: image_url" format.
+      The key can be a full repo name ("owner/repo"), a short repo name ("repo"),
+      or an org/user login. Example:
+
+        MyRepo: https://example.com/my-repo-logo.png
+        owner/OtherRepo: https://example.com/other-logo.svg
+    required: false
+    default: ""
+outputs:
+  path:
+    description: Path where the SVG file was written.
+runs:
+  using: composite
+  steps:
+    - name: Setup Node.js
+      uses: actions/setup-node@v6
+      with:
+        node-version: "22"
+    - name: Install dependencies
+      run: npm ci --omit=dev --ignore-scripts
+      shell: bash
+      working-directory: ${{ github.action_path }}
+    - name: Generate card
+      run: node ${{ github.action_path }}/index.js
+      shell: bash
+      env:
+        INPUT_CARD: ${{ inputs.card }}
+        INPUT_OPTIONS: ${{ inputs.options }}
+        INPUT_PATH: ${{ inputs.path }}
+        INPUT_CUSTOM_IMAGES: ${{ inputs.custom_images }}
+        PAT_1: ${{ inputs.token || github.token }}
+branding:
+  icon: bar-chart-2
+  color: blue
