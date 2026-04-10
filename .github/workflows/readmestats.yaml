@@ -54,7 +54,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate Contributions
-        uses: Daraan/pr-stats-action@v1
+        uses: Daraan/pr-stats-action@v1.1
         continue-on-error: true
         with:
            username: Daraan
@@ -113,7 +113,7 @@ jobs:
           git reset --hard origin/main || true
 
       - name: Download all generated artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           # Download to a temporary directory
           path: artifacts-temp
