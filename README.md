@@ -107,6 +107,8 @@ Here are some ideas to get you started:
   <img width="2" />
   <img src="https://img.shields.io/badge/LaTeX-008080?logo=latex&logoColor=white&style=for-the-badge" height="40" alt="latex logo"  />
   <img width="2" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white&style=for-the-badge" height="40" alt="mysql logo"  />
+  <img width="2" />
   <img src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white&style=for-the-badge" height="40" alt="mysql logo"  />
   <img width="2" />
   <img src="https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white&style=for-the-badge" height="40" alt="sqlite logo"  />
@@ -357,7 +359,7 @@ Here are some ideas to get you started:
 <br>
 <p align="center">PR cards created dynamically with: <a target="_blank" href="https://github.com/marketplace/actions/github-pr-stats-action">pr-stats-action</a>:
 <br>
-<a target="_blank" href="https://github.com/Daraan/ray_utilities">
+<a target="_blank" href="https://github.com/marketplace/actions/github-pr-stats-action">
   <picture>
   <source
     srcset="./profile/prs/dark-own-Daraan-pr-stats-action.svg"
