@@ -36,11 +36,11 @@ jobs:
 
       # Generate to a temp directory first, NOT directly to profile/
       - name: Generate stats card
-        uses: Daraan/github-readme-stats-action@49970c4a51320b899b9e9231558eb8c1cc57b47f
+        uses: Daraan/github-readme-stats-action@678b587e65fb7f64aa0ad1327d18c3b985dfa779
         continue-on-error: true
         with:
           card: stats
-          options: username=Daraan&show_icons=true&hide_rank=false&include_all_commits=true&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage&rank_icon=profile${{ matrix.themeParam }}
+          options: username=Daraan&show_icons=true&hide_rank=false&include_all_commits=true&repositories_contributed_to_scope=all-time&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage&rank_icon=profile${{ matrix.themeParam }}
           path: generated/stats-${{ matrix.theme }}.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
