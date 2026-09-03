@@ -36,7 +36,7 @@ jobs:
 
       # Generate to a temp directory first, NOT directly to profile/
       - name: Generate stats card
-        uses: Daraan/github-readme-stats-action@f3148dddf5c107d94f37548219b0a1341b6b5bd9
+        uses: Daraan/github-readme-stats-action@30ac4605d38c6373c6feb9a210341ba323c7cd46
         continue-on-error: true
         with:
           card: stats
